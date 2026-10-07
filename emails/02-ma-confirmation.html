@@ -1,0 +1,30 @@
+<!-- Template EmailJS « ma confirmation »
+     To Email : {{to_email}}   (= ekpomachi@gmail.com)
+     Reply To : {{invitee_email}}
+     Subject  : Elle a dit OUI — {{activity_title}} -->
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#fff5f8;padding:28px 12px;font-family:Arial,Helvetica,sans-serif;">
+  <tr>
+    <td align="center">
+      <table width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;background:#ffffff;border:1px solid #ffe4ec;border-radius:16px;padding:32px;">
+        <tr>
+          <td style="font-size:22px;color:#4a1030;">Elle a dit oui 💗</td>
+        </tr>
+        <tr>
+          <td style="padding-top:20px;font-size:15px;line-height:1.9;color:#4a1030;">
+            <strong>Invitée :</strong> {{invitee_name}}<br />
+            <strong>Email :</strong> {{invitee_email}}<br />
+            <strong>Programme choisi :</strong> {{activity_emoji}} {{activity_title}}<br />
+            <strong>Détail :</strong> {{activity_detail}}<br />
+            <strong>Rendez-vous :</strong> {{meeting_label}} — {{meeting_full_label}}<br />
+            <strong>Réponse reçue le :</strong> {{answered_at}}
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:22px;font-size:13px;color:#b32450;">
+            La carte vient d'être envoyée à {{invitee_email}}.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

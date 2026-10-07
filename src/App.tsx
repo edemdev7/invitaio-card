@@ -1,16 +1,21 @@
 import { Route, Routes } from 'react-router'
 
-import AppLayout from '@/components/layout/AppLayout'
-import HomePage from '@/pages/HomePage'
+import ActivityPage from '@/pages/ActivityPage'
+import AskPage from '@/pages/AskPage'
+import ConfirmationPage from '@/pages/ConfirmationPage'
+import EmailPage from '@/pages/EmailPage'
 import NotFoundPage from '@/pages/NotFoundPage'
+import YesPage from '@/pages/YesPage'
 
 export default function App() {
   return (
     <Routes>
-      <Route element={<AppLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Route>
+      <Route index element={<AskPage />} />
+      <Route path="/oui" element={<YesPage />} />
+      <Route path="/activite" element={<ActivityPage />} />
+      <Route path="/carte" element={<EmailPage />} />
+      <Route path="/confirmation" element={<ConfirmationPage />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   )
 }
